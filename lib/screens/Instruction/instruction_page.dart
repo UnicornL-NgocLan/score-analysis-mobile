@@ -25,7 +25,7 @@ class InstructionPage extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    margin: const EdgeInsets.only(top:50),
+                    margin: const EdgeInsets.only(top:50,bottom:20),
                     padding:const EdgeInsets.symmetric(horizontal:30,vertical:0),
                     child:Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
