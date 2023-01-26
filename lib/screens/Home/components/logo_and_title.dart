@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tada_score_analysis/screens/Instruction/instruction_page.dart';
 
 class LogoAndTitle extends StatelessWidget {
   const LogoAndTitle({Key? key}) : super(key: key);
@@ -27,7 +28,13 @@ class LogoAndTitle extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 backgroundColor: const Color(0xFF3a7190), // background
               ),
-              onPressed:(){}, 
+              onPressed:(){
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context)=> const InstructionPage()
+                  )
+                );
+              }, 
               child: const Text('Đọc hướng dẫn', style: TextStyle(fontSize:18))
             )
           ],
