@@ -1,6 +1,6 @@
-# tada_score_analysis
+# tada_score_mobile
 
-A new Flutter project.
+Flutter project helps student in Can Tho University check their target score to achive their goal.
 
 ## Getting Started
 
