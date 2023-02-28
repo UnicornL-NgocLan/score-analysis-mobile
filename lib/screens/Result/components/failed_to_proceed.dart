@@ -21,7 +21,7 @@ class FailedToProceedForResultPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical:0,horizontal:30),
             child: Column(
               children:[
-                Image.asset("cross.png",width: 120, height: 120),
+                Image.asset("assets/cross.png",width: 120, height: 120),
                 const SizedBox(height:32),
                 Text('${conclusion['title']}',
                   textAlign: TextAlign.center,

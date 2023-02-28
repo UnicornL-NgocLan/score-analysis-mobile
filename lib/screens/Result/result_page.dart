@@ -26,7 +26,7 @@ class ResultPage extends StatelessWidget {
           width: MediaQuery.of(context).size.width * 1,
           decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("background.jpg"),
+                image: AssetImage("assets/background.jpg"),
                 fit: BoxFit.cover
               ),
           ),

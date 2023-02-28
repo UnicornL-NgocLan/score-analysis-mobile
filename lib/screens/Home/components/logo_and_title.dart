@@ -12,7 +12,7 @@ class LogoAndTitle extends StatelessWidget {
         child:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("logo.png",width: 120, height: 120),
+            Image.asset("assets/logo.png",width: 120, height: 120),
             const SizedBox(height:32),
             const Text("TaDa",
                 style: TextStyle(

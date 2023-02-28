@@ -13,7 +13,7 @@ class InstructionPage extends StatelessWidget {
           width: MediaQuery.of(context).size.width * 1,
           decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("background.jpg"),
+                image: AssetImage("assets/background.jpg"),
                 fit: BoxFit.cover
               ),
           ),
@@ -27,9 +27,9 @@ class InstructionPage extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(top:50,bottom:20),
                     padding:const EdgeInsets.symmetric(horizontal:30,vertical:0),
-                    child:Column(
+                    child:const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const[
+                      children: [
                         Text("Mục đích của ứng dụng",style: TextStyle(color:Colors.white,fontSize:20,fontWeight:FontWeight.w600),),
                         SizedBox(height:16,),
                         Text("Ứng dụng giúp cho sinh viên Đại học Cần Thơ hoặc các sinh viên trường khác có cùng quy tắc tính điểm trung bình tích lũy biết được các điểm số tối thiểu của các tín chỉ còn lại để họ đạt được xếp loại tốt nghiệp mong muốn",textAlign: TextAlign.justify, style: TextStyle(color:Colors.white,fontSize:18)),
