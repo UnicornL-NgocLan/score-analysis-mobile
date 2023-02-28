@@ -80,8 +80,8 @@ class CheckingServiceForAnalysis{
             finishAnalyzing = true;
           }else{
             Map<String,dynamic> lowerScore = scoresArr[initialIndex+1];
-            double newNumber = lowerScore['number'] +3;
-            double newAverage = ((unconditionalCreditsLeftExcludingDissertation - newNumber) * initialScoreToStart + newNumber * lowerScore['score']) / unconditionalCreditsLeftExcludingDissertation;
+            final newNumber = lowerScore['number'] +3;
+            final newAverage = ((unconditionalCreditsLeftExcludingDissertation - newNumber) * initialScoreToStart + newNumber * lowerScore['score']) / unconditionalCreditsLeftExcludingDissertation;
             if(newAverage >= averageTargetScore){
                 scoresArr = [...scoresArr].asMap().entries.map((entry) {
                   int index = entry.key;
@@ -103,8 +103,8 @@ class CheckingServiceForAnalysis{
               finishAnalyzing = true;
           }else{
               Map<String,dynamic> higherScore = scoresArr[initialIndex-1];
-              double newNumber = higherScore['number'] +3;
-              double newAverage = ((unconditionalCreditsLeftExcludingDissertation - newNumber) * initialScoreToStart + newNumber * higherScore['score']) / unconditionalCreditsLeftExcludingDissertation;
+              final newNumber = higherScore['number'] +3;
+              final newAverage = ((unconditionalCreditsLeftExcludingDissertation - newNumber) * initialScoreToStart + newNumber * higherScore['score']) / unconditionalCreditsLeftExcludingDissertation;
               
               scoresArr = [...scoresArr].asMap().entries.map((entry) {
                 int index = entry.key;
